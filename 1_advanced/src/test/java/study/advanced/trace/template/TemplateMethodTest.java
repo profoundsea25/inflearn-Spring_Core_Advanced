@@ -3,7 +3,7 @@ package study.advanced.trace.template;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import study.advanced.trace.template.code.AbstractTemplate;
-import study.advanced.trace.template.code.SbuClassLogic1;
+import study.advanced.trace.template.code.SubClassLogic1;
 
 @Slf4j
 public class TemplateMethodTest {
@@ -43,10 +43,10 @@ public class TemplateMethodTest {
      */
     @Test
     void templateMethodV1() {
-        AbstractTemplate template1 = new SbuClassLogic1();
+        AbstractTemplate template1 = new SubClassLogic1();
         template1.execute();
 
-        AbstractTemplate template2 = new SbuClassLogic1();
+        AbstractTemplate template2 = new SubClassLogic1();
         template2.execute();
     }
 
