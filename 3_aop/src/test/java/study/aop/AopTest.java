@@ -9,12 +9,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import study.aop.order.OrderRepository;
 import study.aop.order.OrderService;
-import study.aop.order.aop.AspectV1;
-import study.aop.order.aop.AspectV2;
+import study.aop.order.aop.*;
 
 @Slf4j
 //@Import(AspectV1.class)
-@Import(AspectV2.class)
+//@Import(AspectV2.class)
+//@Import(AspectV3.class)
+//@Import(AspectV4Pointcut.class)
+@Import({AspectV5Order.LogAspect.class, AspectV5Order.TxAspect.class})
 @SpringBootTest
 public class AopTest {
 
